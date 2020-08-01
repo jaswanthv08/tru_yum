@@ -17,8 +17,5 @@ create table [user] (
 create table cart(
  id int IDENTITY(1,1) PRIMARY KEY,
  [user_id] int FOREIGN KEY REFERENCES [user](id),
- menu_item_id int FOREIGN KEY REFERENCES menu_item(id) , 
- name varchar(65) not null,
- free_delivery varchar(3)not null,
- price decimal(10,2)not null
-)
+ menu_item_id int FOREIGN KEY REFERENCES menu_item(id)
+ )
